@@ -741,3 +741,227 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* General Styling */
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-yellow-500 {
+  color: #c084f5;
+}
+
+
+/* --------- */
+/* Common Section Styling for Experience and Skills */
+/* --------- */
+.section-container {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg); /* Matches the rest of the site */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; /* Center the content */
+}
+
+/* Common Section Box for Education, Experience, Skills */
+.section-box {
+  background-color: rgba(31, 31, 58, 0.8); /* Transparent background to blend with the site */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Deep shadow for depth */
+  margin-bottom: 40px;
+  color: #e4e4e4;
+  width: 60%;
+  max-width: 60%; /* Limit width on large screens */
+  margin: 0 auto 40px; /* Center the box */
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--imp-text-color);
+}
+
+/* Icon Styling */
+.icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* --------- */
+/* Experience Section */
+/* --------- */
+.experience-section {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.experience-card {
+  background-color: rgba(31, 31, 58, 0.8); 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--imp-text-color);
+  margin-bottom: 15px;
+}
+
+.experience-card p {
+  color: #dcdcdc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.experience-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.experience-card ul li {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* --------- */
+/* Skills Section */
+/* --------- */
+.skills-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(31, 31, 58, 0.9); /* Ensure consistent background color */
+  color: white;
+  text-align: center;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg); 
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills-section h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--imp-text-color);
+  margin-bottom: 40px;
+}
+
+/* Skill item */
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+/* Custom progress bar styling */
+.custom-progress-bar {
+  width: 100%; /* Full width on mobile */
+  max-width: 70%; /* Adjust width for large screens */
+  height: 35px; /* Height for better visibility */
+  background-color: #ffffff; /* Unfilled (background) part */
+  border-radius: 12px; /* Add rounded corners */
+  margin: 10px auto; /* Center the progress bar */
+}
+
+.custom-progress-bar .progress-bar {
+  background-color: var(--imp-text-color); /* Purple fill */
+  border-radius: 12px;
+}
+
+/* Center text in progress bar */
+.custom-progress-bar .progress-bar .progress-label {
+  text-align: center;
+  line-height: 35px; /* Ensure label is vertically centered */
+  color: white; /* Text color */
+}
+
+/* --------- */
+/* Mobile Responsive Styles */
+/* --------- */
+@media (max-width: 768px) {
+  .section-box {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .experience-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-card p,
+  .experience-card ul li {
+    font-size: 1rem;
+  }
+
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .custom-progress-bar {
+    width: 90%; /* Full width on mobile */
+    height: 30px;
+  }
+
+  .custom-progress-bar .progress-bar .progress-label {
+    line-height: 30px;
+  }
+}
+
+/* Left-align list items and add star icon */
+.experience-list {
+  text-align: left; /* Left-aligns the list */
+  list-style: none; /* Removes default bullet points */
+  padding-left: 0; /* Removes default padding */
+}
+
+.experience-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.list-icon {
+  color: #c084f5; /* Set icon color to match the theme */
+  margin-right: 10px; /* Adds space between icon and text */
+}
