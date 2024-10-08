@@ -2,12 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  // AiOutlineTwitter,
-  // AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai"; // Correct import for GitHub icon
+import { FaLinkedinIn } from "react-icons/fa"; // FontAwesome for LinkedIn
 
 function Home2() {
   return (
@@ -19,37 +15,16 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Java. </b>
-              </i>
+              I'm passionate about creating innovative and efficient solutions through code. Over the years, I have developed a deep interest in building scalable, secure, and high-performance web applications.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              I enjoy the challenge of working across the full stack, from designing intuitive user interfaces to engineering robust backend systems that power modern applications.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              My work is driven by the belief that technology can simplify and enhance everyday processes, and I'm always eager to explore new tools and technologies to solve complex problems.
+              <br />
+              <br />
+              Outside of coding, I’m a lifelong learner who loves collaborating with teams to deliver high-quality solutions that impact users and businesses positively.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -75,16 +50,6 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/sai-suraj-nuthanakalva-086a6b303/"
@@ -95,16 +60,6 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
             </ul>
           </Col>
         </Row>
@@ -112,4 +67,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

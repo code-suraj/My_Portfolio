@@ -1,0 +1,17 @@
+.resume-scroll-container {
+    max-height: 80vh;          /* Restricts the height to allow scrolling */
+    overflow-y: auto;          /* Enables vertical scrolling */
+    overflow-x: hidden;        /* Disables horizontal scrolling */
+    text-align: center;        /* Centers the entire container */
+  }
+  
+  .pdf-page-container {
+    display: block;
+    margin: 20px auto;         /* Centers each PDF page */
+    width: 800px;              /* Fixed width for each PDF page */
+  }
+  
+  .pdf-page {
+    margin: 0 auto;            /* Centers each page inside the container */
+  }
+  
